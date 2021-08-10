@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/helpers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d5af395ed.js" crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
+    <title>Jose E. Marquez</title>
+</head>
+<body>
+    <div class="bg-blue position-relative">
+        <nav class="container">
+            <div class="hand">
+                <a class="brand" href="#body">J e m p</a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <button class="hand burger-button">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button> 
+            </div> <!--Burger button at mobiles-->
+            <div class="menu position-absolute top-100" id="main-menu">
+                <ul>
+                    <li>
+                        <a href="#about-me">About</a>
+                    </li>
+                    <li>
+                        <a href="#services-section">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div> <!--Nav ends-->
+
+    <div class="first-container">
+        <div class="bg-shadow flex-column display-center">
+            <h1 class="title-1">Hi, I'm Jose Eduardo<h1>
+            <h3 class="subtitle">I'm a Developer<h3>
+        </div>
+    </div> <!--First screen ends-->
+
+    <main class="bg-grey">
+        <section class="container padding-top" id="about-me">
+            <div class="col-6">
+                <div class="display-flex flex-column margin-per-section">
+                    <h3 class="headings">Education</h3>
+                    <div class="icons">
+                        <i class="fas fa-university fa-4x"></i>
+                    </div>
+                    <li>
+                        <h3>University</h3>
+                        <p>Bachelor of geoscience engineering</p>
+                    </li>
+                    <li>
+                        <h3>Degree speciality</h3>
+                        <p>Reservoir characterization</p>
+                    </li>
+                </div>
+                <div class="display-center flex-column margin-per-section">
+                    <h3 class="headings">Experience</h3>
+                    <div class="icons">
+                        <i class="fas fa-database fa-3x"></i>
+                    </div>
+                    <li>
+                        <h3>Mud logger / Services engineer</h3>
+                        <p>Collection, processing, and description of samples of the cuttings recovered from
+                            the drilling mud, as well as the realization of travel sheets, and monitoring of
+                            parameters // Installation of instruments in charge of acquiring real-time data on the
+                            status of the tools used during drilling oil and other energy wells.
+                        </p>
+                    </li>
+                </div>
+            </div>
+        </section> <!--About me ends-->
+        
+        <section class="bg-navy padding-top" id="services-section">
+            <div class="container">
+                <h2 class="headings margin-per-section">Services</h2>
+                <div class="col-4 col-6">
+                    <div class="display-center flex-column margin-per-section margin-icons">
+                        <h3>Javascript</h3>
+                        <i class="fab fa-node-js fa-4x"></i>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam eligendi adipisci iste autem nobis optio, libero totam et laboriosam quibusdam itaque earum nihil nostrum eius! Voluptatem voluptate non qui.</p>
+                    </div>
+                    <div class="display-center flex-column margin-per-section margin-icons">
+                        <h3>Html</h3>
+                        <i class="fab fa-html5 fa-4x"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel aut, pariatur necessitatibus similique cum maiores eaque quidem obcaecati, quisquam quaerat? At laudantium corporis dolorem soluta numquam quasi ut beatae!</p>
+                    </div>
+                    <div class="display-center flex-column margin-per-section margin-icons">
+                        <h3>Css</h3>
+                        <i class="fab fa-css3-alt fa-4x"></i>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo asperiores quasi ratione a? Eius, voluptatem harum dolore voluptate quas ea voluptas doloribus exercitationem eveniet vero quia aliquid aspernatur cumque eum.</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!--Services ends-->
+
+        <section class="container vh-100 padding-top" id="contact-me">
+            <div class="separate">
+                <h2>Contact me!</h2>
+                <p>
+                    Do you want to get in touch? Here are my social-networks! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui numquam libero labore voluptatum quod adipisci explicabo eos! Optio vitae debitis obcaecati porro amet laborum explicabo deserunt soluta, eum natus blanditiis?
+                </p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/jose.eduardo.marquez.perez200996/" title="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <span class="whatsapp">
+                    <a href="https://wa.me/+529932055880" title="Whatsapp"><i class="fab fa-whatsapp fa-2x"></i></a>
+                </span>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-m%C3%A1rquez-p%C3%A9rez-a08510175/" title="LinkedIn"><i class="fab fa-linkedin fa-2x" href=""></i></a>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Send me a message!</legend>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="tel" placeholder="Phone">
+                    <textarea placeholder="Put your message here!"></textarea>
+                    <input type="submit" value="Send message">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
