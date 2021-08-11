@@ -160,3 +160,36 @@ nav .menu.visible {
 .whatsapp a {
     color: green;
 }
+ /* form style */
+ form {
+    background-color: rgb(46, 62, 78);
+    width: min(90%, 1080px);
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ legend {
+    text-align: center;
+    padding: 1.5rem;
+    color: #ffec00;
+    font-weight: 700;
+}
+ input, textarea {
+    margin: 0rem 1rem 1rem 1rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 1px rgb(228, 228, 228);
+}
+.button-style {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.button-style  input{
+    background-color: #ffec00;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    font-weight: 700;
+}

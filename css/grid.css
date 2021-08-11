@@ -8,9 +8,6 @@
     .col-4 {
         display: grid;
         grid-template-columns: repeat(3, 1fr)
-    
         /* grid: two values of row / two values of columns ; */
-    
-        
     }
 }
