@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+#main-menu, #about-me, #services-section, #contact-me {
+    scroll-snap-stop: center;
 }
 body {
     font-family: Helvetica, 'Open Sans', sans-serif;
