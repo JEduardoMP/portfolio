@@ -5,7 +5,8 @@
     scroll-snap-type: y mandatory;
 }
 #main-menu, #about-me, #services-section, #contact-me {
-    scroll-snap-stop: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 body {
     font-family: Helvetica, 'Open Sans', sans-serif;
