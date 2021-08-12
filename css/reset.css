@@ -5,7 +5,7 @@
     scroll-snap-type: y mandatory;
 }
 header, #about-me, #services-section, #contact-me {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 body {
