@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
 }
-#main-menu, #about-me, #services-section, #contact-me {
+header, #about-me, #services-section, #contact-me {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
