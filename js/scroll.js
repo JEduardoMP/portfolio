@@ -2,20 +2,31 @@
 const about = document.getElementById('about-me');
 const services = document.getElementById('services-section');
 const contact = document.getElementById('contact-me');
-const main = document.getElementById('main-menu');
 
 // Top sections
-let aboutOffset = about.offsetHeight - 60;
-let servicesOffset = services.offsetHeight;
-let contactOffset = contact.offsetHeight;
+let aboutOffset = about.offsetTop - 60;
+let servicesOffset = services.offsetTop - 60;
+let contactOffset = contact.offsetTop;
 
 // Nav buttons
-const aboutNav = document.getElementsByClassName('navigation');
+const aboutNav = document.getElementById('about-nav');
+const servicesNav = document.getElementById('services-nav');
+const contactNav = document.getElementById('contact-nav')
 
-function scrollMenu() {
-    for (let i = 0; i < aboutNav.length; i++) {
-        const element = aboutNav[i];
-        console.log(aboutNav[0])
+function scrollAbout() {
+    if (window.scrollY !== aboutOffset) {
+        window.scrollTo(0, aboutOffset)
+    } else {
+        window.scrollTo(0, aboutOffset)
     }
 }
-document.onclick = scrollMenu
+function scrollServices() {
+    window.scrollTo(0, servicesOffset)
+}
+function scrollContact() {
+    window.scrollTo(0, contactOffset);
+}
+aboutNav.onclick = scrollAbout
+servicesNav.onclick = scrollServices
+contactNav.onclick = scrollContact
+

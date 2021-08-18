@@ -56,7 +56,6 @@ nav .menu.visible {
     width: 100%;
     text-align: center;
     left: 0%;
-    transition: all 0.8s ease;
 }
 .bg-blue{
     background-color: rgb(46, 62, 78);
