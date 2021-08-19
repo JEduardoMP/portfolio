@@ -9,16 +9,12 @@ let servicesOffset = services.offsetTop - 60;
 let contactOffset = contact.offsetTop;
 
 // Nav buttons
-const aboutNav = document.getElementById('about-nav');
-const servicesNav = document.getElementById('services-nav');
-const contactNav = document.getElementById('contact-nav')
+const aboutNav = document.querySelector('.about-nav');
+const servicesNav = document.querySelector('.services-nav');
+const contactNav = document.querySelector('.contact-nav')
 
 function scrollAbout() {
-    if (window.scrollY !== aboutOffset) {
-        window.scrollTo(0, aboutOffset)
-    } else {
-        window.scrollTo(0, aboutOffset)
-    }
+    window.scrollTo(0, aboutOffset)
 }
 function scrollServices() {
     window.scrollTo(0, servicesOffset)
@@ -29,4 +25,3 @@ function scrollContact() {
 aboutNav.onclick = scrollAbout
 servicesNav.onclick = scrollServices
 contactNav.onclick = scrollContact
-
